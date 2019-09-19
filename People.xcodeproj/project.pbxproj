@@ -12,6 +12,11 @@
 		94FB88E92333E67000C88F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB88E72333E67000C88F09 /* Main.storyboard */; };
 		94FB88EB2333E67100C88F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FB88EA2333E67100C88F09 /* Assets.xcassets */; };
 		94FB88EE2333E67100C88F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB88EC2333E67100C88F09 /* LaunchScreen.storyboard */; };
+		94FB88F92333E70A00C88F09 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = 94FB88F82333E70A00C88F09 /* people.json */; };
+		94FB88FB2333E7D000C88F09 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB88FA2333E7D000C88F09 /* Person.swift */; };
+		94FB88FD2333E86000C88F09 /* DataControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB88FC2333E86000C88F09 /* DataControllerDelegate.swift */; };
+		94FB88FF2333E91D00C88F09 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB88FE2333E91D00C88F09 /* DataController.swift */; };
+		94FB89012333EF9000C88F09 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB89002333EF9000C88F09 /* PeopleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		94FB88EA2333E67100C88F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FB88ED2333E67100C88F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FB88EF2333E67100C88F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FB88F82333E70A00C88F09 /* people.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		94FB88FA2333E7D000C88F09 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		94FB88FC2333E86000C88F09 /* DataControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerDelegate.swift; sourceTree = "<group>"; };
+		94FB88FE2333E91D00C88F09 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		94FB89002333EF9000C88F09 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				94FB88E32333E67000C88F09 /* AppDelegate.swift */,
-				94FB88E52333E67000C88F09 /* ViewController.swift */,
-				94FB88E72333E67000C88F09 /* Main.storyboard */,
+				94FB88F72333E6A900C88F09 /* Model */,
+				94FB88F62333E69D00C88F09 /* View */,
+				94FB88F52333E68C00C88F09 /* Controller */,
+				94FB88FC2333E86000C88F09 /* DataControllerDelegate.swift */,
 				94FB88EA2333E67100C88F09 /* Assets.xcassets */,
 				94FB88EC2333E67100C88F09 /* LaunchScreen.storyboard */,
 				94FB88EF2333E67100C88F09 /* Info.plist */,
 			);
 			path = People;
+			sourceTree = "<group>";
+		};
+		94FB88F52333E68C00C88F09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94FB88E52333E67000C88F09 /* ViewController.swift */,
+				94FB88FE2333E91D00C88F09 /* DataController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94FB88F62333E69D00C88F09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94FB88E72333E67000C88F09 /* Main.storyboard */,
+				94FB89002333EF9000C88F09 /* PeopleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94FB88F72333E6A900C88F09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94FB88F82333E70A00C88F09 /* people.json */,
+				94FB88FA2333E7D000C88F09 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FB88F92333E70A00C88F09 /* people.json in Resources */,
 				94FB88EE2333E67100C88F09 /* LaunchScreen.storyboard in Resources */,
 				94FB88EB2333E67100C88F09 /* Assets.xcassets in Resources */,
 				94FB88E92333E67000C88F09 /* Main.storyboard in Resources */,
@@ -135,6 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FB88FF2333E91D00C88F09 /* DataController.swift in Sources */,
+				94FB88FD2333E86000C88F09 /* DataControllerDelegate.swift in Sources */,
+				94FB88FB2333E7D000C88F09 /* Person.swift in Sources */,
+				94FB89012333EF9000C88F09 /* PeopleTableViewCell.swift in Sources */,
 				94FB88E62333E67000C88F09 /* ViewController.swift in Sources */,
 				94FB88E42333E67000C88F09 /* AppDelegate.swift in Sources */,
 			);

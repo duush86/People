@@ -1,0 +1,22 @@
+[
+    {
+        "name":"John Paris",
+        "occupation":"Teacher",
+        "address":"32 John Street"
+    },
+    {
+        "name":"Mark Zuckerberg",
+        "occupation":"CEO",
+        "address":"34 Mark Street"
+    },
+    {
+        "name":"Adam Good",
+        "occupation":"Accountant",
+        "address":"22 Adam Street"
+    },
+    {
+        "name":"Antonio Orozco",
+        "occupation":"Dad",
+        "address":"33 Antonio Street"
+    }
+]
